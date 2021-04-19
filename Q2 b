@@ -1,0 +1,4 @@
+SELECT LastName, FirstName, MemberID
+FROM Member, Entry
+WHERE m.MemberID=e.MemberID
+AND Entry.Year=2013;

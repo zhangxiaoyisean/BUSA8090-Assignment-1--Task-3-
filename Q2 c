@@ -1,0 +1,3 @@
+SELECT LastName, FirstName, MemberID
+FROM Member
+WHERE(select MemberID NOT IN(SELECT MemberID FROM Member,Entry WHERE m.MemberID=e.MemberID));
